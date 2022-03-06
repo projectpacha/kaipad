@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'ScherazadeNew';
-   src: url("./test/fonts/ScheherazadeNew-Regular.ttf") format("truetype");
+  src: url("./test/fonts/ScheherazadeNew-Regular.ttf") format("truetype");
 }
+
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.013);
@@ -167,6 +168,7 @@ section textarea #output {
 }
 
 section textarea #input {
+  font-family: 'ScherazadeNew';
   font-family: 'Times New Roman', Times, serif;
 }
 
