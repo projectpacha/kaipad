@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mobile.css" media="only screen and (max-width:768px)">
+    <link rel="stylesheet" href="./desktop.css" media="only screen and (min-width:769px)">
+    <script src="https://kit.fontawesome.com/6f43117985.js" crossorigin="anonymous"></script>
+    <title>kaipad</title>
+</head>
+<body>
+    <nav> <div class="menu" > 
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox">
+          <div></div>
+          <div></div>
+          <div></div></div>
+        </label>
+        <p data-i18n-key="app-title">KAIPAD</p>
+    </nav>
+    <div class="container">
+      <p data-i18n-key="choose-lang"></p>
+      <div class="lang-select">
+        <select data-i18n-switcher class="locale-switcher">
+          <option value="en">English</option>
+          <option value="ml">മലയാളം</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ta">தமிழ்</option>
+          <option value="ar">العربية</option>
+          <option value="es">español</option>
+        </select>
+      </div>
+    
+    </div>
+
+    <section>
+      <div class="top">
+        <p><a href="#third"><i class="fa-solid fa-circle-question"></i></a></p>
+        <button data-i18n-key="in-your-lang" id="langs"></button>
+      </div>
+        <div class="tr">
+            <div class="boxes">
+              <div class="select1">
+                <select>
+                </select></div>
+                <textarea spellcheck="off" id="input"></textarea>
+                <div class="buttons">
+                    <button id="clear1" ><i class="fa-solid fa-trash-can"></i></button>
+                    <button id="down" onclick="window.location='#output'" ><i class="fa-solid fa-circle-arrow-down"></i></button>
+                    <button id="trans" ><i class="fa-solid fa-language"></i></button>
+                </div> 
+              </div>
+                <div class="boxes">
+                  <div class="select">
+                    <select id="selector">
+                        <option data-i18n-key="select-output" selected></option>
+                        <option value="iso">ISO</option>
+                        <option value="ipa">IPA</option>
+                        <option data-i18n-key="gondi" value="gon"></option>
+                        <option data-i18n-key="grantha" value="gra"></option>
+                        <option data-i18n-key="kannada" value="kan"></option>
+                        <option data-i18n-key="malayalam" value="mal"></option>
+                        <option data-i18n-key="tamil" value="tam"></option>
+                        <option data-i18n-key="telugu" value="tel"></option>
+                        <option data-i18n-key="arabi-malayalam" value="arml"></option>
+                    </select></div>
+                    <textarea spellcheck="off" id="output"></textarea>
+                    <div class="buttons">
+                        <button id="clear2" ><i class="fa-solid fa-trash-can"></i></button>
+                        <button onclick="window.location='#input'"  id="up"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                        <button id="copy" ><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                   </div> 
+        </div>
+        <p id="info"></p>
+        <br>
+    </section>
+  <section id="second">
+      <h2 data-i18n-key="kaipad-script-converter"></h2>
+      <br>
+      <div class="cards">
+        <h3 data-i18n-key="supported-input-scripts" ></h3>
+        <li><a data-i18n-key="li-iso" href="https://en.wikipedia.org/wiki/ISO_15919"></a></li>
+        <li><a data-i18n-key="li-ipa" href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"></a></li>
+        <li data-i18n-key="li-gondi" ></li>
+        <li data-i18n-key="li-grantha"></li>
+        <li data-i18n-key="li-kannada" ></li>
+        <li data-i18n-key="li-malayalam" ></li>
+        <li data-i18n-key="li-tamil" ></li>
+        <li data-i18n-key="li-telugu"></li>
+      </div><br>
+ <div class="cards">
+      <h3 data-i18n-key="supported-input-scripts" ></h3>
+      <li><a data-i18n-key="li-iso" href="https://en.wikipedia.org/wiki/ISO_15919">ISO 15919</a></li>
+      <li><a data-i18n-key="li-ipa" href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet (IPA)</a></li>
+      <li data-i18n-key="li-gondi"></li>
+      <li data-i18n-key="li-grantha"></li>
+      <li data-i18n-key="li-kannada"></li>
+      <li data-i18n-key="li-malayalam"></li>
+      <li data-i18n-key="li-tamil"></li>
+      <li data-i18n-key="li-telugu"></li>
+      <li data-i18n-key="li-arabi-malayalam"></li>
+    </div><br>
+     
+    <div class="cards">
+      <h3 data-i18n-key="coming-soon" ></h3>
+      <li data-i18n-key="li-assamese" ></li>
+      <li data-i18n-key="li-arwi" ></li>
+      <li data-i18n-key="li-bangla"></li>
+      <li data-i18n-key="li-brahmi"></li>
+      <li data-i18n-key="li-cyrillic"></li>
+      <li data-i18n-key="li-devanagari"></li>
+      <li data-i18n-key="li-dogra"></li>
+      <li data-i18n-key="li-kaithi"></li>
+      <li data-i18n-key="li-mahajani"></li>
+    </div>
+    <br>
+  </section>
+
+  <section id="third">
+      <h2 data-i18n-key="usage"></h2>
+      <br>
+      <p data-i18n-key="usage-p1"></p>
+      <p data-i18n-key="usage-p2"></p>
+      <i class="fa-solid fa-language"></i> <br><br>
+      <p style="font-weight: bold;" data-i18n-key="usage-p4"></p><br>
+    <p data-i18n-key="usage-p3" ></p>
+    <a data-i18n-key="kaipad-library" href=""></a>
+   <br><br>
+   <h4 data-i18n-key="contact"></h4><br>
+   <i class="fa-brands fa-github"> </i> <i class="fa-brands fa-instagram "> </i> <i class="fa-solid fa-at"></i>
+  </section>
+  <footer>
+      <p data-i18n-key="developed-by" ></p><a data-i18n-key="developer" href="https://malayalamozhi.github.io/"></a>
+  </footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
