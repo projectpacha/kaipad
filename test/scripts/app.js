@@ -153,7 +153,7 @@ async function setLocale(newLocale) {
   translatePage();
 }
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`/lang/${newLocale}.json`);
+  const response = await fetch(`./test/lang/${newLocale}.json`);
   return await response.json();
 }
 // Replace the inner text of each element that has a
