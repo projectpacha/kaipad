@@ -36,8 +36,17 @@ Here `toIPA` converts your input to International Phonetic Alphabet.
 ```js
 console.log(kai.toMal(fromDrav("kaippaːʈɨ̆")))
 ```
-
 Output: കൈപ്പാട് 
+
+### Numerals
+
+You can also convert numerals using Kaipad
+```js
+console.log(kai.MalNum("123"))
+```
+output: ൧൨൩
+
+Read in detail about [Malayalam Arayukaram (samvrithokaram)](#)
 
 ## Supported scripts
 
@@ -55,4 +64,17 @@ The output supports Arabi-Malayalam (Arabic script for Malayalam) in addition to
 `toTel` - Telugu
 `toArmal` - Arabi-Malayalam
 
+# Contributing
+
+If you are planning to include a writing system, make sure that you have are aware of the nuances. A broad transliteration is not adequate for NLP and accurate bidirectional conversion.
+
+### Resources to get you started with contribution.
+1. [IPA](https://www.internationalphoneticassociation.org/content/full-ipa-chart)
+2. [ISO 15919](https://www.iso.org/standard/28333.html)
+3. [Brahmic Scripts](https://en.wikipedia.org/wiki/Brahmic_scripts#:~:text=The%20Brahmic%20scripts%2C%20also%20known,in%20the%20form%20of%20Siddha%E1%B9%83.)
+4. [Writing Systems](https://en.wikipedia.org/wiki/Writing_system)
+
+### Tools
+
+If you are using a Linux Distribution, you can use [gucharmap](https://wiki.gnome.org/Apps/Gucharmap) to see Unicode characters. If you are working with a lesser known writing system, you probably want to install a Unicode font of that particular writing system to properly see what you are working with.
 
