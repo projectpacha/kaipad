@@ -1,6 +1,7 @@
 # kaippad (കൈപ്പാട്)
 ![kai-poster](https://user-images.githubusercontent.com/98872041/156910172-c156ce38-acc1-4b73-83b5-1c17e1929dca.png)
 
+website: [kaipad](https://projectpacha.github.io/kaipad/) 
 ## Introduction
 
 Kaipad is a javascript transliteration library predominantly focusing on Brahmic-based scripts.The name Kaipad means orthography or hand-mark in Malayalam. It supports Romanisation (ISO 15919), and International Phonetic Alphabet (IPA) conversion in addition to Brahmic scripts. At present, Kaipad focuses on the writing system of Dravidian languages.
@@ -55,15 +56,15 @@ This initial development stage supports input from ISO 15919, IPA, Gunjala Gondi
 
 The output supports Arabi-Malayalam (Arabic script for Malayalam) in addition to the above mentioned input scripts.
 
-`toISO` - ISO 15919 standard
-`toIPA` - International Phonetic Alphabet
-`toGon` - Gunjala Gondi
-`toGra` - Grantha
-`toKan` - Kannada
-`toMal` - Malayalam
-`toTam` - Tamil
-`toTel` - Telugu
-`toArmal` - Arabi-Malayalam
+`toISO` - ISO 15919 standard <br>
+`toIPA` - International Phonetic Alphabet<br>
+`toGon` - Gunjala Gondi<br>
+`toGra` - Grantha<br>
+`toKan` - Kannada<br>
+`toMal` - Malayalam<br>
+`toTam` - Tamil<br>
+`toTel` - Telugu<br>
+`toArmal` - Arabi-Malayalam<br>
 
 # Contributing
 
