@@ -11,7 +11,7 @@
 
 @font-face{
     font-family: 'ScheherazadeNew';
-    src:  url('/fonts/ScheherazadeNew-Regular.ttf') format('truetype');
+    src:  url('./test/fonts/ScheherazadeNew-Regular.ttf') format('truetype');
 }
 
 body{
