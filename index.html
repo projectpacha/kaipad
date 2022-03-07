@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javascript Transliteration tool">
+    <meta name="keywords" content="script converter,transliteration,malayalam,gondi,grantha">
     <link rel="stylesheet" href="./test/styles/mobile.css" media="only screen and (max-width:768px)">
     <link rel="stylesheet" href="./test/styles/desktop.css" media="only screen and (min-width:769px)">
     <script src="https://kit.fontawesome.com/6f43117985.js" crossorigin="anonymous"></script>
     <title>kaipad</title>
 </head>
 <body>
-    <nav> <div class="menu" > 
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox">
-          <div></div>
-          <div></div>
-          <div></div></div>
-        </label>
+    <nav>
+      <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div> 
         <p data-i18n-key="app-title">KAIPAD</p>
     </nav>
     <div class="container">
@@ -24,58 +21,67 @@
       <div class="lang-select">
         <select data-i18n-switcher class="locale-switcher">
           <option value="en">English</option>
+          <option value="bn">বাংলা</option>
           <option value="ml">മലയാളം</option>
           <option value="kn">ಕನ್ನಡ</option>
           <option value="ta">தமிழ்</option>
           <option value="ar">العربية</option>
+          <option value="zh">中文</option>
+          <option value="du">Deutsch</option>
           <option value="es">español</option>
+          <option value="he">עִברִית</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="ru">русский</option>
+          <option value="ur">اردو</option>
         </select>
       </div>
     
     </div>
-
     <section>
       <div class="top">
-        <p><a href="#third"><i class="fa-solid fa-circle-question"></i></a></p>
-        <button data-i18n-key="in-your-lang" id="langs"></button>
+        <a href="#third"><i class="fa-regular fa-circle-question"></i></i></a>
+        <a id="settings" data-i18n-key="in-your-lang"></a>
       </div>
-        <div class="tr">
-            <div class="boxes">
-              <div class="select1">
-                <select>
-                </select></div>
-                <textarea spellcheck="off" id="input"></textarea>
-                <div class="buttons">
-                    <button id="clear1" ><i class="fa-solid fa-trash-can"></i></button>
-                    <button id="down" onclick="window.location='#output'" ><i class="fa-solid fa-circle-arrow-down"></i></button>
-                    <button id="trans" ><i class="fa-solid fa-language"></i></button>
-                </div> 
-              </div>
-                <div class="boxes">
-                  <div class="select">
-                    <select id="selector">
-                        <option data-i18n-key="select-output" selected></option>
-                        <option value="iso">ISO</option>
-                        <option value="ipa">IPA</option>
-                        <option data-i18n-key="gondi" value="gon"></option>
-                        <option data-i18n-key="grantha" value="gra"></option>
-                        <option data-i18n-key="kannada" value="kan"></option>
-                        <option data-i18n-key="malayalam" value="mal"></option>
-                        <option data-i18n-key="tamil" value="tam"></option>
-                        <option data-i18n-key="telugu" value="tel"></option>
-                        <option data-i18n-key="arabi-malayalam" value="arml"></option>
-                    </select></div>
-                    <textarea spellcheck="off" id="output"></textarea>
-                    <div class="buttons">
-                        <button id="clear2" ><i class="fa-solid fa-trash-can"></i></button>
-                        <button onclick="window.location='#input'"  id="up"><i class="fa-solid fa-circle-arrow-up"></i></button>
-                        <button id="copy" ><i class="fa-solid fa-clipboard"></i></button>
-                    </div>
-                   </div> 
+      <div class="stack">
+        <div class="menu-bar" id="menu-bar">
+          <div class="buttons">
+            <button class="btn" id="clear1" ><i class="fa-solid fa-trash-can"></i></button>
+            <button class="btn"  onclick="window.location='#output'" ><i class="fa-solid fa-circle-arrow-down"></i></button>
+            <button class="btn" id="trans" ><i class="fa-solid fa-language"></i></button>
+          </div>
+          <div class="select">
+            <select id="selector">
+                <option data-i18n-key="select-output" selected></option>
+                <option value="iso">ISO</option>
+                <option value="ipa">IPA</option>
+                <option data-i18n-key="gondi" value="gon"></option>
+                <option data-i18n-key="grantha" value="gra"></option>
+                <option data-i18n-key="kannada" value="kan"></option>
+                <option data-i18n-key="malayalam" value="mal"></option>
+                <option data-i18n-key="tamil" value="tam"></option>
+                <option data-i18n-key="telugu" value="tel"></option>
+                <option data-i18n-key="arabi-malayalam" value="arml"></option>
+            </select></div>
+          <div class="buttons mob">
+            <button class="btn" id="clear2" ><i class="fa-solid fa-trash-can"></i></button>
+            <button class="btn" onclick="window.location='#input'"><i class="fa-solid fa-circle-arrow-up"></i></button>
+            <button class="btn" id="copy" ><i class="fa-solid fa-clipboard"></i></button>
+          </div>
         </div>
-        <p id="info"></p>
-        <br>
+        <div class="text-boxes">
+          <textarea id="input"></textarea>
+          <textarea id="output"></textarea>
+        </div>
+        <div class="hide">
+          <button class="btn" id="clear2" ><i class="fa-solid fa-trash-can"></i></button>
+          <button class="btn" onclick="window.location='#menu-bar'"  id="up"><i class="fa-solid fa-circle-arrow-up"></i></button>
+          <button class="btn" id="copy" ><i class="fa-solid fa-clipboard"></i></button>
+        </div>
+      </div>
+      <div class="info-box"><p id="info"></p></div>
     </section>
+
   <section id="second">
       <h2 data-i18n-key="kaipad-script-converter"></h2>
       <br>
@@ -129,11 +135,11 @@
     <a data-i18n-key="kaipad-library" href=""></a>
    <br><br>
    <h4 data-i18n-key="contact"></h4><br>
-   <i class="fa-brands fa-github"> </i> <i class="fa-brands fa-instagram "> </i> <i class="fa-solid fa-at"></i>
+   <a class="icons" href="https://github.com/projectpacha/kaipad"><i class="fa-brands fa-github"></i></a> <a class="icons" href="https://www.instagram.com/pachamalayalamproject/?hl=en"><i class="fa-brands fa-instagram "> </i></a>  <a class="icons" href="pachamalayalamproject@gmail.com"><i class="fa-solid fa-at"></i></a>
   </section>
   <footer>
       <p data-i18n-key="developed-by" ></p><a data-i18n-key="developer" href="https://malayalamozhi.github.io/"></a>
   </footer>
-  <script type="module" src="./test/scripts/app.js"></script>
+  <script type="module" src="/app.js"></script>
 </body>
 </html>
