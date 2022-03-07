@@ -10,7 +10,7 @@ var info = document.getElementById('info');
 window.onload = function(){
     options();
     //menu
-document.querySelector("#menu_checkbox").addEventListener('click',()=>{
+document.querySelector(".menu").addEventListener('click',()=>{
   var container = document.querySelector(".container");
   if(container.style.display === "block"){
     container.style.display = "none";
@@ -18,9 +18,14 @@ document.querySelector("#menu_checkbox").addEventListener('click',()=>{
     container.style.display = "block";
   }
 });
-document.querySelector("#langs").addEventListener('click',()=>{
+
+document.querySelector("#settings").addEventListener('click',()=>{
   var container = document.querySelector(".container");
+  if(container.style.display === "block"){
+    container.style.display = "none";
+  }else{
     container.style.display = "block";
+  }
 });
 
 }
@@ -63,7 +68,7 @@ var options = ()=>{
     }else if (value == "tam"){
       info.innerHTML = "";
         input.addEventListener('keyup',()=>{
-          output.value = kai.toTa(kai.fromDrav(input.value));
+          output.value = kai.toTam(kai.fromDrav(input.value));
         });
     }else if (value == "tel"){
       info.innerHTML = "";
@@ -113,7 +118,7 @@ document.querySelector("#trans").addEventListener('click',()=>{
     }else if (value == "mal"){
           output.value = kai.toMal(kai.fromDrav(input.value));
     }else if (value == "tam"){
-          output.value = kai.toTa(kai.fromDrav(input.value));
+          output.value = kai.toTam(kai.fromDrav(input.value));
     }else if (value == "tel"){
           output.value = kai.toTel(kai.fromDrav(input.value));
   }else if (value == "arml"){
@@ -153,7 +158,7 @@ async function setLocale(newLocale) {
   translatePage();
 }
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`./test/lang/${newLocale}.json`);
+  const response = await fetch(`/lang/${newLocale}.json`);
   return await response.json();
 }
 // Replace the inner text of each element that has a
