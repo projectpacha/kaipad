@@ -1,5 +1,5 @@
 {
-    "app-title":"Kaipad",
+    "app-title":"Kaipad Transliterator",
     "choose-lang":"Choose Interface Language",
     "select-output":"Select Output",
     "gondi":"Gunjala Gondi",
@@ -35,11 +35,11 @@
     "usage-p1":"You can input any of the Supported Input scripts and then select an output script to start. Kaipad will automatically start converting the input script to the output script as you type.",
     "usage-p2":"However, you can also click the button shown below to get the output.",
     "usage-p3":"This Bidirectional Transliteration Tool uses the ",
-    "usage-p4":"Note that if you copy paste certain scripts, they may not render properly unless you have a Unicode font of that script/language is installed on your device.",
+    "usage-p4":"Note that if you copy paste certain scripts, they may not render properly unless you have a Unicode font of that script/language installed on your device.",
     "kaipad-library": "Kaipad transliteration javascript library",
     "contact":"Contact",
     "developed-by":"Developed by",
-    "developer":"Idclang",
+    "developer":"Project Pacha",
     "in-your-lang":"View this website in your language",
     "input-area":"Input Area"
 }
