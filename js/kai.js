@@ -1,6 +1,6 @@
-import { inputMappings, outputMappings, punctuationRules, featureRules } from './kaipad/js/maps.js';
+import { inputMappings, outputMappings, punctuationRules, featureRules } from 'maps.js';
 //
-
+console.log("mnt");
 const supportedScripts = [
 //latin, malayalam, kannada, tamil, telugoo punctuations 
   /^[\u0000-\u007F\u0D00-\u0D7F\u0C80-\u0CFF\u0B80-\u0BFF\\u0C00-\u0C7F\s.,!?;:()\[\]{}]*$/u
