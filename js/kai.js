@@ -1,4 +1,4 @@
-import { inputMappings, outputMappings, punctuationRules, featureRules } from './js/maps.js';
+import { inputMappings, outputMappings, punctuationRules, featureRules } from 'maps.js';
 //
 
 const supportedScripts = [
