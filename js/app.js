@@ -1,4 +1,5 @@
-import{supported,convert} from './kaipad/js/kai.js';
+import{supported,convert} from 'kai.js';
+console.log("tmt");
 //constans
 const inputArea = document.getElementById("inputArea");
 const outputArea = document.getElementById("outputArea");
