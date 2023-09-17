@@ -1,0 +1,22 @@
+@import url('./styles.css');
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: #111;
+    color: var(--theme-text);
+}
+
+.navbar.dark-mode {
+    background-color: #111;
+    color: var(--theme-narange);
+    border-bottom:1px solid var(--theme-high);
+}
+
+/* Add more styles as needed for other elements */
+textarea.dark-mode{
+	background:#111;
+	border:1px solid var(--theme-high);
+	color:var(--theme-text);
+}
+
