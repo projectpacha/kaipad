@@ -1,4 +1,4 @@
-import{supported,convert} from '/js/kai.js';
+import{supported,convert} from './js/kai.js';
 //constans
 const inputArea = document.getElementById("inputArea");
 const outputArea = document.getElementById("outputArea");
