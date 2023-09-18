@@ -1,6 +1,5 @@
 import { inputMappings, outputMappings, punctuationRules, featureRules } from './maps.js';
 //
-console.log("mnt");
 const supportedScripts = [
 //latin, malayalam, kannada, tamil, telugoo punctuations 
   /^[\u0000-\u007F\u0D00-\u0D7F\u0C80-\u0CFF\u0B80-\u0BFF\\u0C00-\u0C7F\s.,!?;:()\[\]{}]*$/u
@@ -55,7 +54,7 @@ for (let i = 0; i < str.length; i++) {
       break;
       //-------------------------------------------///
    case ['malayalam', 'iso', ''].toString():
-      for (const [from, to] of Object.entries(punctuationRules.iso)) {
+      for (const [from, to] of Object.entries(punctuationRules.isoMal)) {
         if (from !== ' ') {
           const regex = new RegExp(from, 'g');
           result = result.replace(regex, to);
@@ -110,7 +109,7 @@ for (let i = 0; i < str.length; i++) {
       break;
        //-------------------------------------------///
    case ['malayalam', 'ipa', ''].toString():
-      for (const [from, to] of Object.entries(punctuationRules.ipa)) {
+      for (const [from, to] of Object.entries(punctuationRules.ipaMal)) {
         if (from !== ' ') {
           const regex = new RegExp(from, 'g');
           result = result.replace(regex, to);
