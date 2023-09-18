@@ -1,4 +1,4 @@
-import{supported,convert} from 'kai.js';
+import{supported,convert} from './kai.js';
 console.log("tmt");
 //constans
 const inputArea = document.getElementById("inputArea");
