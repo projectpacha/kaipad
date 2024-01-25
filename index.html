@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-    <link href="./css/dark-mode.css" rel="stylesheet" type="text/css" id="dark-mode-stylesheet" />
-    <title>Kaipad</title>
+	<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<title>Kaipad2.0</title>
 </head>
-<body>
-    <div class="navbar">
-	<h2>KAIPAD (BETA)</h2>
-     <div class="dark-mode-button">❂</div>
-    </div>
-	<section>
-	<textarea class='texty' id="inputArea" spellcheck="false"> </textarea>
+	<body>
+		<div class="main-container">
+				<div class="toolbar">
+	<button id="logo">കൈപ്പാട് </button>
+    <button id="darkModeBtn">d/w</button>
+   
+    <button id="convertBtn">-></button>
+    <button id="clearBtn">Clr</button>
+  <select id="scriptSelection">
+    <option value="malayalam">Malayalam</option>
+    <!-- Add other scripts as needed -->
+</select>
 
-	<div class="tools">
-	  <select id="inputScript">
-        <option value="malayalam">Malayalam</option>
-        <option value="kannada">Kannada</option>
-        <option value="tamil">Tamil</option>
-        <option value="telugu">Telugu</option>
-        <!-- Add options for other input scripts as needed -->
+      <select id="version">
+        <option value="native">Native</option>
+        <option value="sanskrit">Sanskrit</option>
+        <!-- Add other versions as needed -->
     </select>
-    
-    <select id="outputScript">
-        <option value="iso">ISO</option>
-        <option value="ipa">IPA</option>
-        <!-- Add options for other output scripts as needed -->
-    </select>
+</div>
+		
+	<div class="containers">
+    <textarea id="input" placeholder="ഇവിടെ മലയാളം അടിക്കാം. അപ്പുറത്ത് അത് മാറ്റി കിട്ടും.."></textarea>
+    <textarea id="output" spellcheck="false"></textarea>
+</div>
+</div>
 
-    <select id="feature">
-		<option value="">Default</option>
-        <option value="sans">Sanskrit</option>
-        <!-- Add options for other features as needed -->
-    </select>
-     <button id="copy-button" class="buttons" onclick="copyFunction()">Copy</button>
-      <button id="copy-button" class="buttons" onclick="clearFunction()">Clear</button>
-     <button class="buttons" id="convert-button">▼</button>
-	</div>
-	<textarea class='texty' id="outputArea" spellcheck="false"></textarea>
-</section>
-<footer>
-<p>Developed by Pacha Malayalam Project</p>
-<p> All rights reserved © 2023 Kaipad</p>
-</footer>
- <script type="module" src="./js/app.js"></script>
- <script src="./js/script.js"></script>
-</body>
+	<div class="footer">
+		<p>pachamalayalam project	|	പച്ചമലയാളം പ്രോജക്റ്റ്</p>
+		
+	</div>  
+	</body>
+	<script src="script.js" type='module'></script>
+	
 </html>
